@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 96%;
+    width: 197%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+
+
+}
+
+
+#logo {
+    margin: 3px 5px;
+}
+
+#logo img {
+    height: 354px;
+    margin: 1px 1px;
+}
+
+/* #navbar {
+    position: relative;
+
+} */
+
+
+#navbar ul {
+    display: flex;
+    font-family: 'Itim', cursive;
+}
+
+#navbar ul li {
+    /* color: wheat; */
+    list-style: none;
+    font-size: 5.5rem;
+}
+
+#navbar ul li a {
+    color: blanchedalmond;
+    display: block;
+    padding: 96px 96px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(173, 125, 173);
+    border-radius: 150px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 250px;
+    justify-content: center;
+    align-items: center;
+    height: 2224px;
+}
+
+#home::before {
+    content: "";
+    background: url('https://images.unsplash.com/photo-1630769660701-3454835913dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGNhciUyMHJhY2luZyUyMGNhcnRvb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+
+    background-size: 100%;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: #0c0c0b;
+    text-align: center;
+    font-family: 'Itim', cursive;
+}
+
+#home p {
+    color: #df9edd;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Itim', cursive;
+
+}
+
+.h-primary {
+    font-size: 9.2rem;
+    padding: 20px;
+    color:black;
+    font-family: 'Itim', cursive;
+}
+
+.h-secondary {
+    font-size: 9.2rem;
+
+}
+
+.h-primary center {
+    text-align: center;
+    font-size: 6.6rem;
+    color: blanchedalmond;
+    font-family: 'Itim', cursive;
+
+}
+
+.btn {
+    padding: 38px 60px;
+    border: 2px solid white;
+    background-color: rgb(73, 31, 56);
+    color: beige;
+    margin: 20px;
+    font-size: 2.6rem;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    font-family: 'Itim', cursive;
+    /* font-size: 3.4rem; */
+
+}
+
+/* .center p{
+    font-size: 6.7rem;
+} */
+
+#game {
+    margin: 200px;
+    display: flex;
+}
+
+#game .box {
+    border: 6px solid rgb(105, 27, 66);
+    padding: 140px;
+    margin: 3px 44px;
+    border-radius: 110px;
+    background-color: rgb(212 206 217);
+    font-family: 'Itim', cursive;
+
+
+
+}
+
+#game .box img {
+    height: 900px;
+    width: 900px;
+    display: block;
+    margin: auto;
+    /* font-size: 2.2rem; */
+}
+
+/* support system */
+/* client section */
+#supporting-device {
+    height: 1838px;
+    /* color: blanchedalmond */
+/* position: relative; */
+}
+
+#supporting-device::before {
+    content: '';
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1630769660701-3454835913dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTh8fGNhciUyMHJhY2luZyUyMGNhcnRvb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')no-repeat center center/cover;
+    /* background-repeat: no-repeat; */
+    height: 68%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+/* clients */
+#devices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 60px;
+}
+#contact{
+position: relative;
+text-align: center;
+}
+#contact::before  {
+    content: ''; 
+   position: absolute; 
+   align-items: center;
+   width: 50%;
+   height: 96%;
+   z-index: -1;
+   opacity: 0.6;
+   background: url('https://images.unsplash.com/photo-1498230870289-7561110a6e69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvbnRhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') no-repeat center center/cover;
+   
+}
+footer{
+    background: black;
+    color: white;
+    padding: 18px 25px;
+    font-size: 45px; 
+    
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 4.2rem ;
+    margin: 16px;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 75px;
+    font-size: 2.2rem;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    /* color: black;
+    font-size: 20px; */
+}
+#contact-box form{
+    width: 18%;
+    text-align: left;
+}
+#contact-box label{
+    font-size: 3.1rem;
+    font-family: 'Itim', cursive;
+    text-align: left;
+}
+
+
+
